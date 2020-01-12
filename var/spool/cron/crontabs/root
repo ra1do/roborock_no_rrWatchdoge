@@ -1,0 +1,4 @@
+*/5 * * * * rm -rf  /run/shm/*.old
+*/15 * * * * rm -rf  /run/shm/*ppm.log
+05 0 * * * /usr/sbin/logrotate /etc/logrotate.conf
+11 08 * * *  /etc/scripts/playerrestart.sh  >>/run/shm/restart.log 2>&1 &
